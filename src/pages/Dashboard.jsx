@@ -1,4 +1,5 @@
 import {
+  Avatar,
   Box,
   Button,
   Card,
@@ -24,9 +25,7 @@ export default function Dashboard() {
           <Card borderTop="8px" borderColor="purple.400" bg="white" key={task.id}>
             <CardHeader>
               <Flex gap={5}>
-                <Box w="50px" h="50px">
-                  <img src={task.img} alt="" />
-                </Box>
+                <Avatar src={task.img} />
                 <Box>
                   <Heading as="h3" size="sm">
                     {task.title}
